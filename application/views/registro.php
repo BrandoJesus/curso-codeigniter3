@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Registro</h1>
+    <ul>
+        <?php foreach($menu as $item): ?>
+            <li><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
